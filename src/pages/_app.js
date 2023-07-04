@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
         <title>React Shop</title>
       </Head>
       <Header />
-      <Component {...pageProps} />{' '}
+      <Component {...pageProps} />
     </AppContext.Provider>
   );
 }

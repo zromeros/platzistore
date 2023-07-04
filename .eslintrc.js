@@ -11,5 +11,8 @@ module.exports = {
     semi: ['error', 'always'],
     'import/no-anonymous-default-export': 'off',
     'import/no-default-export': 'off',
+    'prettier/prettier': 0,
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
   },
 };

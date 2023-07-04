@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from '@styles/Menu.module.scss';
 
 const Menu = () => {
@@ -6,15 +7,15 @@ const Menu = () => {
     <div className={styles.Div}>
       <ul>
         <li>
-          <a href="/" className="title">
+          <Link href="/" className="title">
             My orders
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/">My account</a>
+          <Link href="/">My account</Link>
         </li>
         <li>
-          <a href="/">Sign out</a>
+          <Link href="/">Sign out</Link>
         </li>
       </ul>
     </div>

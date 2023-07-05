@@ -24,10 +24,10 @@ const Header = () => {
   return (
     <>
       <nav className={styles.Nav}>
-        <Image src={menu} alt="menu" className={styles.menu} priority unoptimized />
+        <Image src={menu} alt="menu" className={styles.menu} width={25} height={21} priority unoptimized />
         <div className={styles['navbar-left']}>
           <Link href="/">
-            <Image src={logo} alt="logo" className={styles['nav-logo']} priority unoptimized />
+            <Image src={logo} alt="logo" className={(styles['nav-logo'], styles['pointer'])} priority unoptimized width={97} height={20} />
           </Link>
           <ul>
             <li>

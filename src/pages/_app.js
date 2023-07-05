@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
         <title>React Shop</title>
       </Head>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1PY1FGVCFK" />
-      <Script id="google-analytics" strategy="afterInteractice">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

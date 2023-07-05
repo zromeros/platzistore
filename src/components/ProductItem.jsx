@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import Image from 'next/image';
+import ImageProcessor from './ImageProcessor';
 import AppContext from '@context/AppContext';
 import addToCartImage from '@icons/bt_add_to_cart.svg';
 import addedToCartImage from '@icons/bt_added_to_cart.svg';
@@ -15,7 +16,7 @@ const ProductItem = ({ product }) => {
 
   return (
     <div className={styles.ProductItem}>
-      <Image src={product.images[0]} alt={product.title} width={240} height={240} unoptimized />
+      <ImageProcessor src={product.images[0]} alt={product.title} unoptimized />
       <div className={styles['product-info']}>
         <div>
           <p>${product.price}</p>

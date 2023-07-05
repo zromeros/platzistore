@@ -10,6 +10,7 @@
       "@context/*": ["context/*"],
       "@icons/*": ["assets/icons/*"],
       "@logos/*": ["assets/logos/*"],
+      "@images/*": ["assets/images/*"],
       "@styles/*": ["styles/*"],
       "@hooks/*": ["hooks/*"]
     }

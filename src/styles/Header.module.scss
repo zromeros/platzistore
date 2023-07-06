@@ -2,22 +2,21 @@
 
 .Nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 0 24px;
   border-bottom: 1px solid $--very-light-pink;
   position: fixed;
   top: 0;
   background: white;
-  width: calc(100% - 50px);
+  width: calc(100% - 30px);
+  z-index: 1;
 }
 .menu {
-  //display: none;
-  width: 20px;
-  height: auto;
+  display: none;
 }
 .nav-logo {
   width: 100px;
-  height: auto;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -27,13 +26,16 @@
   display: flex;
   align-items: center;
   height: 60px;
-  color: $--very-light-pink;
 }
 .navbar-left {
   display: flex;
+  align-items: center;
 }
 .navbar-left ul {
   margin-left: 12px;
+}
+.navbar-right li:first-of-type {
+  margin: 0 1em 0 0;
 }
 .navbar-left ul li a,
 .navbar-right ul li a {
@@ -70,6 +72,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.pointer {
+  cursor: pointer;
+}
 @media (max-width: 640px) {
   .menu {
     display: block;
@@ -79,5 +85,9 @@
   }
   .navbar-email {
     display: none;
+  }
+  .nav-logo {
+    height: 70px;
+    width: 70px;
   }
 }

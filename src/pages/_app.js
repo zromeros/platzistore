@@ -12,6 +12,7 @@ export default function App({ Component, pageProps }) {
     <AppContext.Provider value={initialState}>
       <Head>
         <meta charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="manifest" href="/manifest.json" />
         <title>React Shop</title>
       </Head>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1PY1FGVCFK" />
